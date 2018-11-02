@@ -1,0 +1,85 @@
+
+header {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(255, 255, 255);
+}
+header > #shareprevsave {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+}
+#shareprevsave > #sharebtn {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+#shareprevsave > #previewbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  height: 31px;
+  border-radius: 21.5px;
+  border: solid 1px #00b0ff;
+  background-color: #ffffff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #00b0ff;
+  margin-right: 10px;
+}
+#shareprevsave > #savebtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 31px;
+  border-radius: 21.5px;
+  background-color: #00b0ff;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+  margin-right: 20px;
+}
+header > #backbutton {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 60px;
+  margin-left: 20px;
+}
+#backbutton > #backcarat {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  background-color: white;
+  margin-right: 5px;
+}
+#backbutton > #backtext {
+  width: 36px;
+  /*height: 22px;*/
+  /*font-size: 16px;*/
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #424770;
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Example</title>
+  <link rel=stylesheet href="css/nav.css">
+  <link rel=stylesheet href="css/aside.css">
+  <link rel=stylesheet href="css/header.css">
+  <style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    max-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+  }
+  header {
+    min-height: 44px;
+    max-height: 44px;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > nav {
+    display: flex;
+    flex-flow: column;
+    width: 100px;
+    order: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  #main > #leftmargin {
+    flex: 3;
+    order: 2;
+  }
+  #main > article {
+    flex: 35;
+    order: 3;
+    overflow-y: auto;
+  }
+  #main > article, nav, #leftmargin, #rightmargin {
+    background: rgb(250, 250, 250);
+  }
+  #main > #rightmargin {
+    flex: 3.5;
+    order: 4;
+  }
+  #main > aside {
+    width: 320px;
+    order: 5
+  }
+  aside > #searchbox {
+    height: 41px;
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    border: solid;
+    border-color: lightgrey;
+    border-width: 1px;
+    background: rgb(247, 247, 247);
+  }
+  </style>
+  <body>
+    <header>
+      <div id="backbutton">
+        <img src="img/icons-8-left-4/icons-8-left-4.png"
+              srcset="img/icons-8-left-4/icons-8-left-4@2x.png 2x,
+                      img/icons-8-left-4/icons-8-left-4@3x.png 3x"
+              id="backcarat">
+        <div id="backtext">Back</div>
+      </div>
+      <div id="shareprevsave">
+        <img src="img/share-icon/share-icon.png"
+              srcset="img/share-icon/share-icon@2x.png 2x,
+                      img/share-icon/share-icon@3x.png 3x"
+              id="sharebtn">
+        <div id="previewbtn">Preview</div>
+        <div id="savebtn">Save</div>
+      </div>
+    </header>
+    <div id="main">
+      <nav>
+        <div id="inputs" class="addfieldbtn">
+          <img src="img/icons-8-rename/icons-8-rename.png"
+              srcset="img/icons-8-rename/icons-8-rename@2x.png 2x,
+                      img/icons-8-rename/icons-8-rename@3x.png 3x"
+              class="fieldbtnicon">
+          <div class="fieldbtntxt">Inputs</div>
+        </div>
+        <div id="table" class="addfieldbtn">
+          <img src="img/icons-8-table-1/icons-8-table-1.png"
+                srcset="img/icons-8-table-1/icons-8-table-1@2x.png 2x,
+                        img/icons-8-table-1/icons-8-table-1@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Inputs</div>
+        </div>
+        <div id="charts" class="addfieldbtn">
+          <img src="img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio.png"
+                srcset="img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio@2x.png 2x,
+                        img/icons-8-rebalance-portfolio/icons-8-rebalance-portfolio@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Charts</div>
+        </div>
+        <div id="shapes" class="addfieldbtn">
+          <img src="img/icons-8-metamorphose/icons-8-metamorphose.png"
+                srcset="img/icons-8-metamorphose/icons-8-metamorphose@2x.png 2x,
+                        img/icons-8-metamorphose/icons-8-metamorphose@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Shapes</div>
+        </div>
+        <div id="media" class="addfieldbtn">
+          <img src="img/icons-8-picture/icons-8-picture.png"
+                srcset="img/icons-8-picture/icons-8-picture@2x.png 2x,
+                        img/icons-8-picture/icons-8-picture@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Media</div>
+        </div>
+        <div id="equations" class="addfieldbtn">
+          <img src="img/sigma/sigma.png"
+                srcset="img/sigma/sigma@2x.png 2x,
+                        img/sigma/sigma@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Equations</div>
+        </div>
+        <div id="functions" class="addfieldbtn">
+          <img src="img/fx/fx.png"
+                srcset="img/fx/fx@2x.png 2x,
+                        img/fx/fx@3x.png 3x"
+                class="fieldbtnicon">
+          <div class="fieldbtntxt">Functions</div>
+        </div>
+      </nav>
+      <div id="leftmargin"></div>
+      <article>
+        Article
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci eros, vel scelerisque tellus viverra vel. Aliquam elementum quis diam nec scelerisque. Etiam dignissim congue elit, ac faucibus lacus vulputate ut. Ut commodo porta nibh, in eleifend lacus malesuada a. Pellentesque lacinia erat maximus tortor mollis ullamcorper. Praesent sodales, nibh quis aliquam molestie, metus nunc congue leo, a dictum lacus lectus nec turpis. Praesent accumsan lacinia quam eu congue. Pellentesque et quam nec diam eleifend dictum.
+
+        Donec suscipit dui sit amet aliquet dapibus. In hac habitasse platea dictumst. Aenean sed neque iaculis, suscipit neque eget, lobortis nunc. Nulla et libero id diam sodales rutrum. Integer sollicitudin at lorem et hendrerit. Nullam justo dolor, porta in elit eu, bibendum sollicitudin nisi. Curabitur finibus imperdiet mollis. Donec vehicula quam sit amet risus eleifend lacinia.
+
+        Sed lectus nisl, faucibus in mattis at, fermentum ut sem. Nam varius, nisl in volutpat pulvinar, quam mi luctus justo, sed sodales sapien metus mattis libero. Nunc lacinia erat scelerisque, rutrum erat in, consequat enim. In sed dolor vitae neque tempus feugiat. Cras eu pulvinar risus. Phasellus euismod lectus ante, sed imperdiet mi finibus eu. Suspendisse non aliquet nibh, in venenatis mi. Integer sit amet mattis est. Fusce tempor erat vitae justo volutpat, at vulputate massa lobortis.
+
+        Duis vulputate eros ut orci consequat, ac euismod ante imperdiet. Morbi sagittis elit ipsum, nec gravida ipsum sodales eget. Curabitur aliquam sollicitudin justo, vel sollicitudin libero cursus eget. Maecenas in eleifend arcu. Aenean vitae fringilla eros, vitae tristique nunc. Vivamus varius leo id tempus posuere. Nulla non ipsum pellentesque, mollis dui a, fringilla risus. Nunc elementum nulla ut erat faucibus, ac euismod leo fringilla. Donec iaculis magna at semper pretium. Nullam eget libero lacinia, porttitor turpis ac, condimentum justo. Sed libero metus, facilisis sit amet neque maximus, consectetur vestibulum ligula. Pellentesque quis erat et dolor condimentum tempus ac eget augue. Nullam a fringilla sem. Nam elementum facilisis neque, ac venenatis risus hendrerit quis. Cras sagittis lorem a justo maximus iaculis. In ultricies auctor purus, ac vulputate turpis pulvinar eleifend.
+
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at eleifend dolor, id tincidunt arcu. Curabitur nec interdum nulla, ac mattis lorem. Nulla bibendum nibh ac arcu fringilla commodo. Quisque justo diam, tempus eget ipsum sit amet, aliquet lacinia purus. In gravida interdum augue. Duis sit amet cursus ante, sed ullamcorper ligula. In in elit ac sapien mollis dictum. Curabitur auctor velit est, in egestas sapien finibus sit amet. Nulla eu nunc vitae enim consequat aliquam. Etiam quis tincidunt enim.
+      </article>
+      <div id="rightmargin"></div>
+      <aside>
+        <input id="searchbox" type="text" placeholder="search anything">
+      </aside>
+    </div>
+  </body>
+</html>
