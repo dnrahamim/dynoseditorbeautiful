@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background: rgb(255, 255, 255);
+  border: solid 1px rgba(34, 63, 153, 0.1);
 }
 header > #shareprevsave {
   display: flex;
