@@ -27,29 +27,26 @@
     display: flex;
     flex-flow: column;
     width: 100px;
-    order: 1;
     justify-content: center;
     align-items: center;
   }
-  #main > #leftmargin {
-    flex: 3;
-    order: 2;
-  }
-  #main > article {
-    flex: 35;
-    order: 3;
+  #main > #document {
+    display: flex;
+    flex-flow: row;
+    background: rgb(250, 250, 250);
     overflow-y: auto;
   }
-  #main > article, nav, #leftmargin, #rightmargin {
-    background: rgb(250, 250, 250);
+  #document > #leftmargin {
+    flex: 3;
   }
-  #main > #rightmargin {
+  #document > article {
+    flex: 35;
+  }
+  #document > #rightmargin {
     flex: 3.5;
-    order: 4;
   }
   #main > aside {
-    width: 320px;
-    order: 5
+    min-width: 320px;
   }
   aside > #searchbox {
     height: 41px;
@@ -132,20 +129,24 @@
           <div class="fieldbtntxt">Functions</div>
         </div>
       </nav>
-      <div id="leftmargin"></div>
-      <article>
-        Article
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci eros, vel scelerisque tellus viverra vel. Aliquam elementum quis diam nec scelerisque. Etiam dignissim congue elit, ac faucibus lacus vulputate ut. Ut commodo porta nibh, in eleifend lacus malesuada a. Pellentesque lacinia erat maximus tortor mollis ullamcorper. Praesent sodales, nibh quis aliquam molestie, metus nunc congue leo, a dictum lacus lectus nec turpis. Praesent accumsan lacinia quam eu congue. Pellentesque et quam nec diam eleifend dictum.
 
-        Donec suscipit dui sit amet aliquet dapibus. In hac habitasse platea dictumst. Aenean sed neque iaculis, suscipit neque eget, lobortis nunc. Nulla et libero id diam sodales rutrum. Integer sollicitudin at lorem et hendrerit. Nullam justo dolor, porta in elit eu, bibendum sollicitudin nisi. Curabitur finibus imperdiet mollis. Donec vehicula quam sit amet risus eleifend lacinia.
+      <div id="document">
+        <div id="leftmargin"></div>
+        <article>
+          Article
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vulputate orci eros, vel scelerisque tellus viverra vel. Aliquam elementum quis diam nec scelerisque. Etiam dignissim congue elit, ac faucibus lacus vulputate ut. Ut commodo porta nibh, in eleifend lacus malesuada a. Pellentesque lacinia erat maximus tortor mollis ullamcorper. Praesent sodales, nibh quis aliquam molestie, metus nunc congue leo, a dictum lacus lectus nec turpis. Praesent accumsan lacinia quam eu congue. Pellentesque et quam nec diam eleifend dictum.
+  
+          Donec suscipit dui sit amet aliquet dapibus. In hac habitasse platea dictumst. Aenean sed neque iaculis, suscipit neque eget, lobortis nunc. Nulla et libero id diam sodales rutrum. Integer sollicitudin at lorem et hendrerit. Nullam justo dolor, porta in elit eu, bibendum sollicitudin nisi. Curabitur finibus imperdiet mollis. Donec vehicula quam sit amet risus eleifend lacinia.
+  
+          Sed lectus nisl, faucibus in mattis at, fermentum ut sem. Nam varius, nisl in volutpat pulvinar, quam mi luctus justo, sed sodales sapien metus mattis libero. Nunc lacinia erat scelerisque, rutrum erat in, consequat enim. In sed dolor vitae neque tempus feugiat. Cras eu pulvinar risus. Phasellus euismod lectus ante, sed imperdiet mi finibus eu. Suspendisse non aliquet nibh, in venenatis mi. Integer sit amet mattis est. Fusce tempor erat vitae justo volutpat, at vulputate massa lobortis.
+  
+          Duis vulputate eros ut orci consequat, ac euismod ante imperdiet. Morbi sagittis elit ipsum, nec gravida ipsum sodales eget. Curabitur aliquam sollicitudin justo, vel sollicitudin libero cursus eget. Maecenas in eleifend arcu. Aenean vitae fringilla eros, vitae tristique nunc. Vivamus varius leo id tempus posuere. Nulla non ipsum pellentesque, mollis dui a, fringilla risus. Nunc elementum nulla ut erat faucibus, ac euismod leo fringilla. Donec iaculis magna at semper pretium. Nullam eget libero lacinia, porttitor turpis ac, condimentum justo. Sed libero metus, facilisis sit amet neque maximus, consectetur vestibulum ligula. Pellentesque quis erat et dolor condimentum tempus ac eget augue. Nullam a fringilla sem. Nam elementum facilisis neque, ac venenatis risus hendrerit quis. Cras sagittis lorem a justo maximus iaculis. In ultricies auctor purus, ac vulputate turpis pulvinar eleifend.
+  
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at eleifend dolor, id tincidunt arcu. Curabitur nec interdum nulla, ac mattis lorem. Nulla bibendum nibh ac arcu fringilla commodo. Quisque justo diam, tempus eget ipsum sit amet, aliquet lacinia purus. In gravida interdum augue. Duis sit amet cursus ante, sed ullamcorper ligula. In in elit ac sapien mollis dictum. Curabitur auctor velit est, in egestas sapien finibus sit amet. Nulla eu nunc vitae enim consequat aliquam. Etiam quis tincidunt enim.
+        </article>
+        <div id="rightmargin"></div>
+      </div>
 
-        Sed lectus nisl, faucibus in mattis at, fermentum ut sem. Nam varius, nisl in volutpat pulvinar, quam mi luctus justo, sed sodales sapien metus mattis libero. Nunc lacinia erat scelerisque, rutrum erat in, consequat enim. In sed dolor vitae neque tempus feugiat. Cras eu pulvinar risus. Phasellus euismod lectus ante, sed imperdiet mi finibus eu. Suspendisse non aliquet nibh, in venenatis mi. Integer sit amet mattis est. Fusce tempor erat vitae justo volutpat, at vulputate massa lobortis.
-
-        Duis vulputate eros ut orci consequat, ac euismod ante imperdiet. Morbi sagittis elit ipsum, nec gravida ipsum sodales eget. Curabitur aliquam sollicitudin justo, vel sollicitudin libero cursus eget. Maecenas in eleifend arcu. Aenean vitae fringilla eros, vitae tristique nunc. Vivamus varius leo id tempus posuere. Nulla non ipsum pellentesque, mollis dui a, fringilla risus. Nunc elementum nulla ut erat faucibus, ac euismod leo fringilla. Donec iaculis magna at semper pretium. Nullam eget libero lacinia, porttitor turpis ac, condimentum justo. Sed libero metus, facilisis sit amet neque maximus, consectetur vestibulum ligula. Pellentesque quis erat et dolor condimentum tempus ac eget augue. Nullam a fringilla sem. Nam elementum facilisis neque, ac venenatis risus hendrerit quis. Cras sagittis lorem a justo maximus iaculis. In ultricies auctor purus, ac vulputate turpis pulvinar eleifend.
-
-        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin at eleifend dolor, id tincidunt arcu. Curabitur nec interdum nulla, ac mattis lorem. Nulla bibendum nibh ac arcu fringilla commodo. Quisque justo diam, tempus eget ipsum sit amet, aliquet lacinia purus. In gravida interdum augue. Duis sit amet cursus ante, sed ullamcorper ligula. In in elit ac sapien mollis dictum. Curabitur auctor velit est, in egestas sapien finibus sit amet. Nulla eu nunc vitae enim consequat aliquam. Etiam quis tincidunt enim.
-      </article>
-      <div id="rightmargin"></div>
       <aside>
         <input id="searchbox" type="text" placeholder="search anything">
       </aside>
