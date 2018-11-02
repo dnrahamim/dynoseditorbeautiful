@@ -4,72 +4,9 @@
   <link rel=stylesheet href="css/nav.css">
   <link rel=stylesheet href="css/aside.css">
   <link rel=stylesheet href="css/header.css">
-  <style>
-  * {
-    box-sizing: border-box; 
-  }
-  body {
-    display: flex;
-    min-height: 100vh;
-    max-height: 100vh;
-    flex-direction: column;
-    margin: 0;
-  }
-  header {
-    min-height: 44px;
-    max-height: 44px;
-  }
-  #main {
-    display: flex;
-    flex: 1;
-  }
-  #main > nav {
-    display: flex;
-    flex-flow: column;
-    width: 100px;
-    justify-content: center;
-    align-items: center;
-  }
-  #main > #document {
-    display: flex;
-    flex-flow: row;
-    background: rgb(250, 250, 250);
-    overflow-y: auto;
-  }
-  #document > #leftmargin {
-    flex: 3;
-  }
-  #document > article {
-    flex: 35;
-  }
-  #document > #rightmargin {
-    flex: 3.5;
-  }
-  #main > aside {
-    min-width: 320px;
-  }
-  aside > #searchbox {
-    height: 41px;
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-    border: solid;
-    border-color: lightgrey;
-    border-width: 1px;
-    background: rgb(247, 247, 247);
-  }
-
-  .button {
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor:pointer;
-  }
-
-  .button:hover {
-    background-color: lightgrey;
-    color: white;
-  }
-  </style>
+  <link rel=stylesheet href="css/document.css">
+  <link rel=stylesheet href="css/body.css">
+  <link rel=stylesheet href="css/util.css">
   <body>
     <header>
       <div id="backbutton" class="button">

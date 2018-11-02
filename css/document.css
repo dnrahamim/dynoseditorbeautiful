@@ -1,0 +1,15 @@
+#main > #document {
+  display: flex;
+  flex-flow: row;
+  background: rgb(250, 250, 250);
+  overflow-y: auto;
+}
+#document > #leftmargin {
+  flex: 3;
+}
+#document > article {
+  flex: 35;
+}
+#document > #rightmargin {
+  flex: 3.5;
+}
