@@ -58,10 +58,21 @@
     border-width: 1px;
     background: rgb(247, 247, 247);
   }
+
+  .button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor:pointer;
+  }
+
+  .button:hover {
+    background-color: lightgrey;
+    color: white;
+  }
   </style>
   <body>
     <header>
-      <div id="backbutton">
+      <div id="backbutton" class="button">
         <img src="img/icons-8-left-4/icons-8-left-4.png"
               srcset="img/icons-8-left-4/icons-8-left-4@2x.png 2x,
                       img/icons-8-left-4/icons-8-left-4@3x.png 3x"
