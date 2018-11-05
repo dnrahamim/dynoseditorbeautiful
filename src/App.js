@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
-import './App.css';
+//import './App.css';
 import './css/nav.css'
 import './css/aside.css'
 import './css/header.css'
@@ -11,7 +11,7 @@ import './css/util.css'
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id="shell">
   
   {/* HEADER */}
   <header>

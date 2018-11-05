@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box; 
 }
-body {
+#shell {
   display: flex;
   min-height: 100vh;
   max-height: 100vh;
