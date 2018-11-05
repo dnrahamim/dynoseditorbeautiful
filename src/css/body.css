@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box; 
+}
+body {
+  display: flex;
+  min-height: 100vh;
+  max-height: 100vh;
+  flex-direction: column;
+  margin: 0;
+  font-family: sans-serif;
+}
+header {
+  min-height: 44px;
+  max-height: 44px;
+}
+#main {
+  display: flex;
+  flex: 1;
+}
+#main > nav {
+  display: flex;
+  flex-flow: column;
+  min-width: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+#main > aside {
+  min-width: 320px;
+}
